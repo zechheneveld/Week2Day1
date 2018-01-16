@@ -19,22 +19,22 @@ public class NewCalcMethod {
             System.out.println("Input Second Number:");
             String secondNumber = sc.nextLine();
 
-            //int intFirst = Integer.parseInt(firstNumber);
-            //int intSecond = Integer.parseInt(secondNumber);
-            // int intResult = 0;
+//            int intFirst = Integer.parseInt(firstNumber);
+//            int intSecond = Integer.parseInt(secondNumber);
+//            int intResult = 0;
             //Double allows a decimal to be used to find
             double intFirst = Double.parseDouble(firstNumber);
             double intSecond = Double.parseDouble(secondNumber);
             double intResult = 0.0;
 
             if (operator.equals("+") || operator.equals("add")) {
-                intResult = intFirst + intSecond;
+                intResult = add(intFirst, intSecond);
             } else if (operator.equals("-") || operator.equals("subtract")) {
-                intResult = intFirst - intSecond;
+                intResult = subtract(intFirst, intSecond);
             } else if (operator.equals("*") || operator.equals("multiply")) {
-                intResult = intFirst * intSecond;
+                intResult = multiply(intFirst, intSecond);
             } else if (operator.equals("/") || operator.equals("divide")) {
-                intResult = intFirst / intSecond;
+                intResult = divide(intFirst, intSecond);
 
 
             }
@@ -52,20 +52,20 @@ public class NewCalcMethod {
         }System.out.println("Have a nice day!");
 
     }
-    public static int add(int intFirst, int intSecond){
-        int intResult = intFirst + intSecond;
+    public static double add(double intFirst, double intSecond){
+        double intResult = intFirst + intSecond;
         return intResult;
     }
-    public static int subtract(int intFirst, int intSecond){
-        int intResult = intFirst - intSecond;
+    public static double subtract(double intFirst, double intSecond){
+        double intResult = intFirst - intSecond;
         return intResult;
     }
-    public static int multiply(int intFirst, int intSecond){
-        int intResult = intFirst * intSecond;
+    public static double multiply(double intFirst, double intSecond){
+        double intResult = intFirst * intSecond;
         return intResult;
     }
-    public static int divide(int intFirst, int intSecond){
-        int intResult = intFirst / intSecond;
+    public static double divide(double intFirst, double intSecond){
+        double intResult = intFirst / intSecond;
         return intResult;
     }
 }
