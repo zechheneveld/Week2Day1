@@ -52,18 +52,22 @@ public class NewCalcMethod {
         }System.out.println("Have a nice day!");
 
     }
+    //Adding Method
     public static double add(double intFirst, double intSecond){
         double intResult = intFirst + intSecond;
         return intResult;
     }
+    //Subtracting Method
     public static double subtract(double intFirst, double intSecond){
         double intResult = intFirst - intSecond;
         return intResult;
     }
+    //Multiplying Method
     public static double multiply(double intFirst, double intSecond){
         double intResult = intFirst * intSecond;
         return intResult;
     }
+    //Dividing Method
     public static double divide(double intFirst, double intSecond){
         double intResult = intFirst / intSecond;
         return intResult;
